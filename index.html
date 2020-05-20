@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filterable Select</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script type="text/javascript" src="./services.js" defer></script>
+	<script type="text/javascript" src="./index.js" defer></script>
+</head>
+<body>
+	<div class="search-component">
+		<div class="search-input">
+			<div class="text-input">
+				<span><img src="./assets/search.svg"></span>
+				<input type="text" id="search-text" onkeyup="module.getFilteredItems(event)" onclick="module.textboxClicked(event)" onblur="module.searchBlurred(event)" placeholder="Search users by ID, Address, Name, PIN...">
+				<span class="clear-btn-container"><img src="./assets/closeicon.svg" onclick="module.clearSearchBox()"></span>
+			</div>
+			<div class="result-container-card" id="dropdown-card">
+				<!-- filtered items will get inserted here -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
