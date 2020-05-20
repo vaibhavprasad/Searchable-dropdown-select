@@ -11,7 +11,6 @@ The Services file contains the data.
   
   
 Pending Items:   
-  -  Add onmouseout/ onmouseleave event when pointer exits the search list container.
   -  Integrate with some api-provider.
   -  Rafactoring code
   -  Beautification
