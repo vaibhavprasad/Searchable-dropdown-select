@@ -6,7 +6,7 @@ var services = (function () {
 
 		// without cors its Same origin exception and with cors its opaque. So hardcoding data
 
-		// let url = 'http://www.mocky.io/v2/5ba8efb23100007200c2750c';
+		// let url = '' // use some mocky get service
 		// const response = await fetch(url, {
 		// 	method: 'GET',
 		// 	mode: 'no-cors',
