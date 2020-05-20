@@ -14,7 +14,7 @@
 				<input type="text" id="search-text" onkeyup="module.getFilteredItems(event)" onclick="module.textboxClicked(event)" onblur="module.searchBlurred(event)" placeholder="Search users by ID, Address, Name, PIN...">
 				<span class="clear-btn-container"><img src="./assets/closeicon.svg" onclick="module.clearSearchBox()"></span>
 			</div>
-			<div class="result-container-card" id="dropdown-card">
+			<div class="result-container-card" id="dropdown-card" onmouseleave="module.leaveDropdown(event)">
 				<!-- filtered items will get inserted here -->
 			</div>
 		</div>

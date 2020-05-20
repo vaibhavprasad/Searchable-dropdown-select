@@ -281,6 +281,10 @@ var module = (function () {
 		document.getElementById('dropdown-card').style.display = 'none';
 	}
 
+	function leaveDropdown (event) {
+		if (currentElementId) document.getElementById(currentElementId).style.backgroundColor = 'initial';
+	}
+
 	// exposing only the required methods.
 	return {
 		'clearSearchBox': clearSearchBox,
@@ -288,7 +292,8 @@ var module = (function () {
 		'hoveredElement': onhoverElement,
 		'onKeyPress': onKeyPress,
 		'textboxClicked': textboxClicked,
-		'searchBlurred': searchBlurred
+		'searchBlurred': searchBlurred,
+		leaveDropdown
 	}
 
 })();
